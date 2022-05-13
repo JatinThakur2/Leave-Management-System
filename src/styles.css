@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    margin: 0;
+    background-color: #f7f7f7;
+    font-family: sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.outlet-page-content {
+    margin-top: 1%;
+}
+
+
+/* Custom Paragraph */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    letter-spacing: 1px;
+}
+
+.content-box {
+    padding: 0.5%;
+}
+
+
+/* All Form Box */
+
+.form-box {
+    margin-top: 1%;
+    border: 1px solid #dadada;
+    padding: 2%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 12px #dadada;
+}
+
+.custom-ngSelect.is-invalid {
+    border: 1px solid rgb(248, 20, 20);
+    padding: 1%;
+}
+
+.form-box .form-group {
+    /* border-bottom: 1px solid #dee2e6; */
+    padding: 0.5% 0%;
+}
+
+.form-box .form-title {
+    color: #3f51b5;
+    padding: 1% 0%;
+    border-bottom: 1px solid #ccc;
+}
+
+.custom-tab a.active {
+    color: #0000ff;
+    border-bottom: 1px solid #0000ff;
+}
+
+.table thead {
+    cursor: pointer;
+}
+
+.mat-icon {
+    vertical-align: middle;
+}
+
+.table-details {
+    font-weight: 100;
+    color: #767676;
+    font-style: italic;
+}
+
+.ngx-pagination li {
+    border-radius: 5px !important;
+    font-size: 1.05rem;
+}
+
+.list-search {
+    margin-left: -8%;
+}
+
+.cal-month-view .cal-day-badge {
+    background-color: #39538c;
+}
+
+.custom-nav {
+    background-color: rgb(65, 112, 171);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 54px;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: rgb(92, 101, 136);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul li a {
+    padding: 15px 30px;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #7386D5;
+}
+
+.sidebar-items .sidebar-header {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 8%;
+    font-weight: 400;
+    background-color: #8e97bd;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 54px 15px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+.cu-calen-viewdate h3 {
+    font-size: 1.7em;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+}

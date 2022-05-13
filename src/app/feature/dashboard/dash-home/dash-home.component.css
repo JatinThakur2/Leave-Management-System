@@ -1,0 +1,8 @@
+img {
+    overflow: auto;
+    position: relative;
+    width: fit-content;
+    height: auto;
+    margin: 10%;
+    overflow: hidden;
+}

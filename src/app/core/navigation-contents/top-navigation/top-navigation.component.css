@@ -1,0 +1,13 @@
+.material-icons {
+    color: black;
+}
+
+button {
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(120, 120, 159);
+    /* Green */
+    color: white;
+}
