@@ -1,6 +1,6 @@
 import { CoreModule } from './../../core/core.module';
 import { ReportService } from './services/report.service';
-import { EventService } from './services/event.service';
+
 
 import { AdminAuthGuard } from './auth/adminAuth.guard';
 import { MaterialModule } from './../../shared/material/material.module';
@@ -81,7 +81,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 
   ],
-  providers: [EmployeeService, LeaveTypeService, EmployeeLeaveService, ReportService, EventService,
+  providers: [EmployeeService, LeaveTypeService, EmployeeLeaveService, ReportService,
     DatePipe, AuthGuard, AdminAuthGuard, AuthService,
     {
       provide: HTTP_INTERCEPTORS,
